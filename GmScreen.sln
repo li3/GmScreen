@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Windows Desktop
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DmScreen", "DmScreen\DmScreen.csproj", "{B0A66385-028F-443C-8D0A-E091E0FF80EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmScreen", "GmScreen\GmScreen.csproj", "{B0A66385-028F-443C-8D0A-E091E0FF80EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
