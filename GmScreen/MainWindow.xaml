@@ -1,19 +1,29 @@
-﻿<Controls:MetroWindow x:Class="WpfApplication2.MainWindow"
+﻿<Controls:MetroWindow x:Class="GmScreen.MainWindow"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-                      Title="MainWindow" 
+                      Title="GM Screen"
+                      ShowWindowCommandsOnTop="False"
                       GlowBrush="{DynamicResource AccentColorBrush}"
                       EnableDWMDropShadow="True"
                       ResizeMode="CanResizeWithGrip"
                       Height="350" 
-                      Width="525">
+                      Width="525"
+                      DataContext="{Binding Main, Source={StaticResource Locator}}">
+    
     <Controls:MetroWindow.RightWindowCommands>
         <Controls:WindowCommands>
-            <Button Content="settings" />
+            <Button Content="Account" Command="{Binding OpenLoginFlyoutCommand}" />
         </Controls:WindowCommands>
     </Controls:MetroWindow.RightWindowCommands>
-    <Grid>
-        
-    </Grid>
+
+    <Controls:MetroWindow.Flyouts>
+        <Controls:FlyoutsControl>
+            <Controls:Flyout Header="Login" Position="Right" Width="250" IsOpen="{Binding IsLoginFlyoutOpen}">
+                <TextBlock>Login stuff here...</TextBlock>
+            </Controls:Flyout>
+        </Controls:FlyoutsControl>
+    </Controls:MetroWindow.Flyouts>
+    
+    <ContentControl Content="{Binding CurrentViewModel}" />
 </Controls:MetroWindow>

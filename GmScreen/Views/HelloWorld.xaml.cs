@@ -1,6 +1,4 @@
-﻿using GmScreen.ViewModel;
-using MahApps.Metro.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,16 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GmScreen
+namespace GmScreen.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for HelloWorld.xaml
     /// </summary>
-    public partial class MainWindow : MetroWindow
+    public partial class HelloWorld : UserControl
     {
-        public MainWindow()
+        public HelloWorld()
         {
-            InitializeComponent();          
+            InitializeComponent();
         }
     }
 }
